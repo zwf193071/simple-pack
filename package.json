@@ -1,0 +1,24 @@
+{
+  "name": "simple-pack",
+  "version": "1.0.0",
+  "description": "简单的打包工具，原理类似于webpack",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/generator": "^7.11.0",
+    "@babel/parser": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/traverse": "^7.11.0",
+    "@babel/types": "^7.11.0",
+    "fs-extra": "^9.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
