@@ -1,7 +1,7 @@
 {
   "name": "sim-pack",
-  "version": "1.0.1",
-  "description": "简单的打包工具，原理类似于webpack",
+  "version": "1.0.2",
+  "description": "The simple tool dealing with packing JS files",
   "main": "index.js",
   "directories": {
     "example": "example"
