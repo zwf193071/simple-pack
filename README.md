@@ -14,7 +14,7 @@ The following steps:
 
 目前仅供js文件打包使用
 
-全局安装simple-pack。`npm install -g simple-pack`
+全局安装simple-pack。`npm install -g sim-pack`
 
 or
 ```
