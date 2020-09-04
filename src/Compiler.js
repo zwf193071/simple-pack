@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-let babylon = require('babylon');
 const babel = require('@babel/core');
 const parse = require('@babel/parser').parse;
 let t = require('@babel/types');
@@ -38,8 +37,8 @@ class Compiler {
         }
         return content
     }
-    parse(source, parentPath) {
-        let ast = babylon.parse(source);
+    parseSource(source, parentPath) {
+        let ast = parse(source);
         // 依赖的数组
         let dependencies = [];
 
@@ -73,7 +72,7 @@ class Compiler {
         if (isEntry) {
             this.entryId = moduleName; // 保存入口的名字
         }
-        let { sourceCode, dependencies } = this.parse(source, path.dirname(moduleName));
+        let { sourceCode, dependencies } = this.parseSource(source, path.dirname(moduleName));
         this.modules[moduleName] = sourceCode;
 
         // 解析 A 文件 A文件可能又会引入 B文件，所以需要递归一下
